@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WARIS - Wadah Revitalisasi Bahasa Asal Keluarga</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .header-bg {
+      background-image: url('header.svg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .header-overlay {
+      background-color: rgba(22, 163, 74, 0.85);
+      /* Tailwind green-600 with opacity */
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="header-bg text-white text-center shadow relative">
+    <div class="header-overlay py-12 px-4">
+      <h1 class="text-4xl font-bold">WARIS</h1>
+      <p class="mt-2 text-lg">Wadah Revitalisasi Bahasa Asal Keluarga</p>
+      <div class="mt-6">
+        <a href="https://drive.google.com/drive/folders/1sSXoDpG6wZMnPpx6phI5sNAaaf_KR6tz?usp=sharing" class="bg-white text-green-600 px-6 py-2 rounded-full shadow hover:bg-gray-100 mx-2">Unduh
+          Panduan</a>
+        <a href="#galeri" class="bg-white text-green-600 px-6 py-2 rounded-full shadow hover:bg-gray-100 mx-2">Lihat
+          Galeri</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex items-center justify-end">
+        <!-- Tombol Hamburger -->
+        <button id="menu-toggle" class="text-green-600 md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+  
+      <!-- Menu Link: Mobile Menu (Vertikal) dan Desktop Menu (Horizontal) -->
+      <div id="nav-menu" class="hidden md:flex flex justify-center space-x-6 md:items-center md:space-x-6 mt-4 md:mt-0 space-y-2 md:space-y-0 text-center md:text-center transition-all duration-300 ease-in-out">
+        <a href="#tentang" class="text-green-600 hover:underline">Tentang</a>
+        <a href="#panduan" class="text-green-600 hover:underline">Panduan</a>
+        <a href="#galeri" class="text-green-600 hover:underline">Galeri Keluarga</a>
+        <a href="/unggah.html" class="text-green-600 hover:underline">Unggah Karya</a>
+        <a href="#kontak" class="text-green-600 hover:underline">Kontak</a>
+      </div>
+  
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-nav" class="hidden flex-col space-y-2 text-center mt-4 md:hidden transition-all duration-300 ease-in-out">
+        <a href="#tentang" class="text-green-600 hover:underline">Tentang</a>
+        <a href="#panduan" class="text-green-600 hover:underline">Panduan</a>
+        <a href="#galeri" class="text-green-600 hover:underline">Galeri Keluarga</a>
+        <a href="/unggah.html" class="text-green-600 hover:underline">Unggah Karya</a>
+        <a href="#kontak" class="text-green-600 hover:underline">Kontak</a>
+      </div>
+    </div>
+  </nav>
+  
+  <section id="tentang" class="py-12 px-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-semibold text-green-700 mb-4">Tentang WARIS</h2>
+    <p class="leading-relaxed">WARIS adalah inisiatif kebahasaan yang bertujuan menghidupkan kembali bahasa asal
+      keluarga melalui pendekatan sederhana dan berbasis teknologi. Program ini menyasar keluarga sebagai aktor utama
+      pelestarian bahasa daerah di tengah kehidupan modern.</p>
+  </section>
+
+  <section id="panduan" class="bg-green-50 py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-semibold text-green-700 mb-8">Panduan Keluarga</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg text-center">
+          <img src="https://img.icons8.com/fluency/96/brain.png" alt="Ikon Tebak Kata" class="mx-auto mb-4 w-16">
+          <h3 class="text-xl font-bold mb-2 text-green-600">Tebak Kata Bahasa Ibu</h3>
+          <p class="text-sm">Permainan edukatif untuk mengenalkan kosakata dasar dalam bahasa daerah secara
+            menyenangkan.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg text-center">
+          <img src="icon_cerita.svg" alt="Ikon Cerita Masa Kecil" class="mx-auto mb-4 w-32">
+          <h3 class="text-xl font-bold mb-2 text-green-600">Cerita Masa Kecil</h3>
+          <p class="text-sm">Kegiatan mendengar dan mencatat cerita dari orang tua/kakek-nenek menggunakan bahasa ibu.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg text-center">
+          <img src="https://img.icons8.com/fluency/96/open-book--v2.png" alt="Ikon Kamus Mini"
+            class="mx-auto mb-4 w-16">
+          <h3 class="text-xl font-bold mb-2 text-green-600">Kamus Mini Keluarga</h3>
+          <p class="text-sm">Dokumentasikan kosakata penting bersama anggota keluarga dalam bentuk kamus sederhana.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri" class="py-12 px-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-semibold text-green-700 mb-4">Galeri Karya Keluarga</h2>
+    <p>Lihat berbagai karya keluarga dari seluruh Indonesia, mulai dari kamus mini, cerita pendek, hingga video
+      percakapan bahasa daerah.</p>
+    <img src="https://undraw.co/api/illustrations/undraw_moments_0o2w.svg" alt="Ilustrasi Galeri"
+      class="mt-6 w-full max-w-md mx-auto">
+    <p class="italic mt-4 text-center">(Contoh galeri belum tersedia pada prototipe ini)</p>
+  </section>
+
+  <section id="kontak" class="bg-green-100 py-12 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold text-green-700 mb-4">Hubungi Kami</h2>
+      <p class="mb-2">Ingin ikut serta? Kirim pertanyaan atau karya keluarga Anda ke:</p>
+      <p class="font-semibold text-green-700"><a href="mailto:kontak@waris.id">kontak@waris.id</a></p>
+    </div>
+  </section>
+
+  <footer class="bg-green-600 text-white text-center py-6 mt-12">
+    <p>&copy; 2025 WARIS - Revitalisasi Bahasa Asal Keluarga</p>
+  </footer>
+
+  <!-- Script untuk toggle hamburger -->
+  <script>
+    // Mengambil elemen tombol dan navbar
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+  
+    // Menambahkan event listener untuk tombol hamburger
+    menuToggle.addEventListener('click', () => {
+      // Toggle kelas 'hidden' untuk menampilkan atau menyembunyikan navbar
+      mobileNav.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>
